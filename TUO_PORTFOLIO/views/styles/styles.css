@@ -54,7 +54,7 @@ h1 {
 .navbar {
     background: #f1f1f1;
     color: #333;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,6 +332,111 @@ h1 {
   color: #fff;
   text-decoration: underline;
 }
+
+/* Styles généraux pour tous les écrans */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour les écrans de taille moyenne (jusqu'à 768px de largeur) */
+@media screen and (max-width: 768px) {
+  header {
+    /* Modifier les styles pour l'en-tête sur les écrans de taille moyenne */
+    /* Par exemple : */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbar li {
+    /* Modifier les styles pour les éléments de la barre de navigation sur les écrans de taille moyenne */
+    /* Par exemple : */
+    margin-bottom: 10px;
+    flex-direction: column;
+
+  }
+
+  #presentations {
+    /* Modifier les styles pour la section de présentation sur les écrans de taille moyenne */
+    /* Par exemple : */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image1 {
+    /* Modifier les styles pour l'image dans la section de présentation sur les écrans de taille moyenne */
+    /* Par exemple : */
+    width: 100%;
+    height: auto;
+  }
+
+  #competences {
+    /* Modifier les styles pour la section des compétences sur les écrans de taille moyenne */
+    /* Par exemple : */
+    flex-direction: column;
+  }
+
+  /* Ajoutez d'autres règles CSS spécifiques pour les écrans de taille moyenne */
+}
+
+/* Styles pour les écrans de petite taille (jusqu'à 480px de largeur) */
+@media screen and (max-width: 480px) {
+  header {
+    /* Modifier les styles pour l'en-tête sur les petits écrans */
+    /* Par exemple : */
+    /* padding: 10px; */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .navbar{
+    /* background-color: tan; */
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .navbar ul {
+    /* Modifier les styles pour les éléments de la barre de navigation sur les petits écrans */
+    /* Par exemple : */
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* background-color: aqua; */
+    flex-direction: column;
+  }
+  .navbar li{
+    width: 100%;
+  }
+
+  #presentations {
+    /* Modifier les styles pour la section de présentation sur les petits écrans */
+    /* Par exemple : */
+    padding: 20px;
+  }
+
+  .image1 {
+    /* Modifier les styles pour l'image dans la section de présentation sur les petits écrans */
+    /* Par exemple : */
+    width: 100%;
+    height: auto;
+  }
+
+  #competences {
+    /* Modifier les styles pour la section des compétences sur les petits écrans */
+    /* Par exemple : */
+    padding: 10px;
+  }
+
+  /* Ajoutez d'autres règles CSS spécifiques pour les petits écrans */
+}
+
+/* Ajoutez d'autres media queries pour d'autres tailles d'écran si nécessaire */
 
   
   
