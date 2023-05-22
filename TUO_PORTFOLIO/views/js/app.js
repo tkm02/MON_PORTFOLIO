@@ -25,3 +25,22 @@ new Typewriter(txtAmin,{
 .pauseFor(1000)
 .deleteChars(6)
 .start();
+
+
+const controlle = document.getElementById('controlle');
+const nav = document.getElementById('nav');
+
+controlle.addEventListener('click', function() {
+  nav.classList.toggle('active');
+  document.querySelector('.fa-bars').style.display = 'none';
+  document.querySelector('.fa-xmark').style.display = 'flex';
+});
+
+nav.addEventListener('click', function() {
+  nav.classList.remove('active');
+  document.querySelector('.fa-bars').style.display = 'flex';
+  document.querySelector('.fa-xmark').style.display = 'none';
+});
+
+
+
